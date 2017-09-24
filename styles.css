@@ -1,0 +1,56 @@
+html {
+  font-size: 100%;
+}
+
+
+
+header {
+  background-color: rgba(233, 78, 119, 0.2);
+  height: 7.2vh;
+}
+
+#home {
+  background-color: #FFFFFF;
+  height: 92.8vh;
+  width: 100vw;
+}
+#home h2 {
+  color: #336699;
+}
+
+
+#about {
+  background-color: #336699;
+  height: 100vh;
+  width: 100vw;
+}
+#about h2 {
+  color: #FFFFFF;
+}
+#ig {
+ background-color: #FFFFFF;
+}
+
+#menu {
+  border-color: #FFFFF0;
+  height: 100vh;
+  width: 100vw;
+}
+
+#events {
+  background-color: rgba(233, 78, 119, 0.2);
+  height: 100vh;
+  width: 100vw;
+}
+
+#location {
+  background-color: #FFFFFF;
+  height: 98.2vh;
+  width: 100vw;
+}
+
+#footer {
+  background-color: rgba(233, 78, 119, 0.2);
+  height: 7.2vh;
+  width: 100vw;
+}
