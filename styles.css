@@ -2,8 +2,41 @@ html {
   font-size: 100%;
 }
 
+/*TEXT STYLES*/
+
+.dark {
+ color: #336699;
+}
+.pink {
+ color: #E94E77;
+}
+.light {
+ color: #FFFFFF;
+}
+.black {
+ color: #151515;
+}
+.wordmark {
+  font-size: 1.25em;
+  font-family: 'Baloo', sans-serif;
+}
+
+.heading {
+  font-family: 'Hind', sans-serif;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+.page-heading {
+  text-transform: uppercase;
+}
+
+.body-text {
+  font-family: 'Open-Sans', sans-serif;
+  font-size: 1em;
+}
 
 
+/*END DEFAULT TEXT STYLES*/
 header {
   background-color: rgba(233, 78, 119, 0.2);
   height: 7.2vh;
@@ -12,7 +45,6 @@ header {
 #home {
   background-color: #FFFFFF;
   height: 92.8vh;
-  width: 100vw;
 }
 #home h2 {
   color: #336699;
@@ -21,36 +53,40 @@ header {
 
 #about {
   background-color: #336699;
-  height: 100vh;
-  width: 100vw;
+  height: 60vh;
+
 }
 #about h2 {
   color: #FFFFFF;
 }
 #ig {
  background-color: #FFFFFF;
+ height: 40vh;
 }
 
 #menu {
   border-color: #FFFFF0;
   height: 100vh;
-  width: 100vw;
+
 }
 
 #events {
   background-color: rgba(233, 78, 119, 0.2);
   height: 100vh;
-  width: 100vw;
+
 }
 
 #location {
   background-color: #FFFFFF;
   height: 98.2vh;
+}
+#location img {
+  height: 40vh;
   width: 100vw;
 }
 
 #footer {
   background-color: rgba(233, 78, 119, 0.2);
   height: 7.2vh;
-  width: 100vw;
+
 }
