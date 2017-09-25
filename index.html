@@ -9,8 +9,21 @@
   </head>
   <body>
     <header>
-      <h3>pop.Bubble.pop</h3>
+      <button class="hamburger">&#9776;</button>
+      <button class="cross">&#735;</button>
+      <div class="wordmark">
+        <h3 class="dark">pop.<span class="pink logo">Bubble.</span>pop</h3>
+      </div>
     </header>
+    <div class="menu">
+  <ul>
+    <a href="#home"><li>Home</li></a>
+    <a href="#about"><li>About</li></a>
+    <a href="#menu"><li>Menu</li></a>
+    <a href="#events"><li>Events</li></a>
+    <a href="#location"><li>Location</li></a>
+  </ul>
+</div>
     <div id="home">
       <h3>Exceptionally decorated Hong Kong-style bubble waffles filled with Hawaiian inspired ice cream.</h3>
       <h4>Location</h4>
@@ -57,7 +70,18 @@
       <button>View Calendar</button>
     </div>
     <div id="location">
-      <img src="images/mobile-map.png" alt="map" />
+
+      <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="images/desktop-map.png">
+          <source
+            media="(max-width: 767px)"
+            srcset="images/mobile-map.png">
+
+          <img src="images/mobile-map.png" alt="map" />
+</picture>
+
       <div class="address">
         <h2>Location</h2>
         <h4>123 Waikiki, Way  Waikiki HI 12345</h4>
@@ -73,5 +97,8 @@
     <div id="footer">
       <p><a href="mailto:pop.bubble.pop@comcast.net">pop.Bubble.pop@comcast.net</a></p>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="scripts/menu.js"></script>
   </body>
 </html>

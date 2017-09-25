@@ -1,7 +1,70 @@
 html {
   font-size: 100%;
 }
+body {
+  font-family: 'Hind', sans-serif;
+}
+.hamburger{
+  background-color: #336699;
+  border-radius: 5px;
+  /*position: absolute;*/
+  top:.5em;
+  left: .5em;
+  margin-left: .5em;
+  /*line-height:2em;*/
+  padding: 2px 5px;
+  /*padding:5px 15px 0px 15px;*/
+  color:#FFFFF0;
+  border:0;
+  font-size:36px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background-color: #336699;
+  border-radius: 5px;
+  align-self: flex-start;
+  position:absolute;
+  top:.5em;
+  left:.5em;
+  padding:2px 5px;
+  color:#FFFFF0;
+  border:0;
+  font-size:3em;
+  line-height:2em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu{z-index:1000000; font-weight:bold; font-size:1em; width:100%; background:#FFFFF0;  position:absolute; text-align:center; font-size:1em;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#151515;}
+.menu ul li a:hover {  color:#E94E77; text-decoration:none;}
+.menu a{text-decoration:none; color:#336699;}
+.menu a:hover{text-decoration:none; color:#E94E77;}
 
+.glyphicon-home{
+  color:white;
+  font-size:1.5em;
+  margin-top:5px;
+  margin:0 auto;
+}
+header
+{/*display:block;*/
+  background-color: rgba(233, 78, 119, 0.2);
+  height: 8vh;
+  font-size:1.25em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+span{padding-left:20px;}
+a{color:#336699;}
 /*TEXT STYLES*/
 
 .dark {
@@ -19,8 +82,10 @@ html {
 .wordmark {
   font-size: 1.25em;
   font-family: 'Baloo', sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1em auto;
 }
-
 .heading {
   font-family: 'Hind', sans-serif;
   font-weight: bold;
@@ -40,6 +105,15 @@ html {
 header {
   background-color: rgba(233, 78, 119, 0.2);
   height: 7.2vh;
+}
+header h3 {
+  font-family: 'Baloo', sans-serif;
+  font-size: 1.25em;
+  margin: 0 auto;
+  color: #336699;
+}
+span.logo {
+  padding: 0;
 }
 
 #home {
@@ -73,7 +147,6 @@ header {
 #events {
   background-color: rgba(233, 78, 119, 0.2);
   height: 100vh;
-
 }
 
 #location {
