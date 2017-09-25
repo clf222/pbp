@@ -20,25 +20,30 @@ body {
   font-weight:bold;
   cursor:pointer;
   outline:none;
-  z-index:10000000000000;
+  z-index:100;
 }
 .cross{
   background-color: #336699;
   border-radius: 5px;
-  align-self: flex-start;
-  position:absolute;
+  /*position: absolute;*/
   top:.5em;
-  left:.5em;
-  padding:2px 5px;
+  left: .5em;
+  margin-left: .5em;
+  font-size:3em;
+  line-height:36px;
+  /*line-height:2em;*/
+  padding: 2px 6px;
+  /*padding:7px 15px 0px 15px;*/
+  /*padding:5px 15px 0px 15px;*/
   color:#FFFFF0;
   border:0;
-  font-size:3em;
-  line-height:2em;
+  /*font-size:36px;*/
   font-weight:bold;
   cursor:pointer;
   outline:none;
-  z-index:10000000000000;
+  z-index:100;
 }
+
 .menu{z-index:1000000; font-weight:bold; font-size:1em; width:100%; background:#FFFFF0;  position:absolute; text-align:center; font-size:1em;}
 .menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
 .menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
@@ -55,14 +60,7 @@ body {
   margin:0 auto;
 }
 header
-{/*display:block;*/
-  background-color: rgba(233, 78, 119, 0.2);
-  height: 8vh;
-  font-size:1.25em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 span{padding-left:20px;}
 a{color:#336699;}
 /*TEXT STYLES*/
@@ -102,9 +100,19 @@ a{color:#336699;}
 
 
 /*END DEFAULT TEXT STYLES*/
-header {
+header
+{/*display:block;*/
   background-color: rgba(233, 78, 119, 0.2);
-  height: 7.2vh;
+  height: 8vh;
+  font-size:1.25em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
 }
 header h3 {
   font-family: 'Baloo', sans-serif;
@@ -117,8 +125,9 @@ span.logo {
 }
 
 #home {
+  padding-top: 8vh;
   background-color: #FFFFFF;
-  height: 92.8vh;
+  height: 92vh;
 }
 #home h2 {
   color: #336699;
@@ -127,7 +136,7 @@ span.logo {
 
 #about {
   background-color: #336699;
-  height: 60vh;
+  height: 52vh;
 
 }
 #about h2 {
