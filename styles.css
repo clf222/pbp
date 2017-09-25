@@ -130,6 +130,7 @@ span.logo {
   padding-top: 8vh;
   background-color: #FFFFFF;
   height: 92vh;
+
 }
 #home h2 {
   color: #336699;
@@ -138,7 +139,7 @@ span.logo {
 
 #about {
   background-color: #336699;
-  padding-top: 8vh;
+  padding-top: 12vh;
   height: 52vh;
 
 }
@@ -152,6 +153,7 @@ span.logo {
 
 #menu {
   border-color: #FFFFF0;
+  padding-top: 12vh;
   height: 100vh;
 
 }

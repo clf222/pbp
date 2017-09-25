@@ -15,5 +15,16 @@ $( ".cross" ).hide();
 $( ".hamburger" ).show();
 });
 });
+// this is a test not working
+$("#location").click(function() {
+  $(".menu").fadeToggle("slow", function() {
+  });
+});
+
+
+// need script so that when you click on #home, #about, #menu, #events, #location the following happens:
+// 1.menu disappears
+// 2. header appears with .hamburger as visible
+// 3. go to the id of the clicked on menu item
 
 });
