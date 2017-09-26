@@ -24,16 +24,10 @@
     </ul>
   </div>
     </header>
-    <!-- <div class="menu">
-  <ul>
-    <a href="#home"><li>Home</li></a>
-    <a href="#about"><li>About</li></a>
-    <a href="#menu"><li>Menu</li></a>
-    <a href="#events"><li>Events</li></a>
-    <a href="#location"><li>Location</li></a>
-  </ul>
-</div> -->
+
+
     <div id="home">
+      <div class="text">
       <h3>Exceptionally decorated Hong Kong-style bubble waffles filled with Hawaiian inspired ice cream.</h3>
       <h4>Location</h4>
       <p>123 Waikiki, Way  Waikiki HI 12345</p>
@@ -42,14 +36,15 @@
         10am-9pm (Saturday-Sunday)
         801-123-3333
       </p>
-      <socials>
-        <i class="fa fa-instagram"></i>
-        <i class="fa fa-facebook-square"></i>
-        <i class="fa fa-yelp"></i>
-      </socials>
-
-
     </div>
+      <div class="socials">
+
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-facebook-square"></i>
+          <i class="fa fa-yelp"></i>
+     </div>
+    </div>
+
     <div id="about">
       <h2 class="heading page-heading">Bubble Waffles</h2>
         <p>pop.Bubble.pop brings you the hottest trend in street food straight from  Hong Kong to Waiki! </p>
@@ -60,7 +55,7 @@
     </div>
     <div id="menu">
       <h2 class="heading page-heading">Menu</h2>
-      <button>View Menu</button>
+      <button class="content">View Menu</button>
     </div>
     <div id="events">
       <h2 class="heading page-heading">Events</h2>
@@ -76,11 +71,14 @@
         <p>October 28</p><p>Maui Block Party</p>
         <p>10am-6pm</p><p>The Hilton</p>
       </div>
-      <button>View Calendar</button>
+      <button class="content">View Calendar</button>
     </div>
     <div id="location">
 
       <picture>
+        <source
+          media="(min-width: 1000px)"
+          srcset="images/big-map.png">
           <source
             media="(min-width: 768px)"
             srcset="images/desktop-map.png">
@@ -101,7 +99,7 @@
         <p>10am-9pm (Saturday-Sunday)</p>
         <p>Telephone: 801-123-3333</p>
       </div>
-      <button>View Map</button>
+      <button class="content">View Map</button>
     </div>
     <div id="footer">
       <p><a href="mailto:pop.bubble.pop@comcast.net">pop.Bubble.pop@comcast.net</a></p>
