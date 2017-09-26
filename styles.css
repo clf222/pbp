@@ -51,7 +51,7 @@ body {
 .menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
 .menu li {display: block; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
 .menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
-.menu ul li a { text-decoration:none;  margin: 0px; color:#151515;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#336699;}
 .menu ul li a:hover {  color:#E94E77; text-decoration:none;}
 .menu a{text-decoration:none; color:#336699;}
 .menu a:hover{text-decoration:none; color:#E94E77;}
@@ -159,6 +159,10 @@ span.logo {
   justify-content: space-around;
   color: #336699;
   width: 100%;
+}
+
+a:hover{
+  color: #E94E77;
 }
 
 #home h3 {
