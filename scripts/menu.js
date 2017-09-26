@@ -5,7 +5,7 @@ $( ".menu" ).hide();
 $( ".hamburger" ).click(function() {
 $( ".menu" ).slideToggle( "slow", function() {
 $( ".hamburger" ).hide();
-$( ".cross" ).show();
+// $( ".cross" ).show();
 });
 });
 
@@ -16,9 +16,11 @@ $( ".hamburger" ).show();
 });
 });
 // this is a test not working
-$("#location").click(function() {
-  $(".menu").fadeToggle("slow", function() {
+$("ul li").click(function() {
+  $(".menu").fadeToggle("fast", function() {
+    $(".hamburger").show();
   });
+  $
 });
 
 
