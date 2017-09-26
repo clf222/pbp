@@ -153,17 +153,17 @@ span.logo {
   justify-content: center;
   align-items: center;
 }
+.socials {
+  display: flex;
+  font-size: 2.75em;
+  justify-content: space-between;
+}
+
 #home h3 {
   color: #336699;
   font-size: 1.5em;
   font-family: 'Baloo', sans-serif;
   line-height: 1.5em;
-}
-
-.socials {
-  display: flex; 
-
-
 }
 
 
