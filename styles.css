@@ -156,7 +156,9 @@ span.logo {
 .socials {
   display: flex;
   font-size: 2.75em;
-  justify-content: space-between;
+  justify-content: space-around;
+  color: #336699;
+  width: 100%;
 }
 
 #home h3 {
@@ -173,6 +175,13 @@ span.logo {
   background-color: #336699;
   padding-top: 12vh;
   height: 52vh;
+  padding-right: .5em;
+  padding-left: .5em;
+  padding-bottom: 1em;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
 
 }
 #about h2 {
@@ -186,17 +195,38 @@ span.logo {
 #menu {
   border-color: #FFFFF0;
   padding-top: 12vh;
+  padding-right: .5em;
+  padding-left: .5em;
+  padding-bottom: 1em;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
   height: 100vh;
 
 }
 
 #events {
   background-color: rgba(233, 78, 119, 0.2);
+  padding-right: .5em;
+  padding-left: .5em;
+  padding-bottom: 1em;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
   height: 100vh;
 }
 
 #location {
   background-color: #FFFFFF;
+  padding-right: .5em;
+  padding-left: .5em;
+  padding-bottom: 1em;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
   height: 98.2vh;
 }
 #location img {
