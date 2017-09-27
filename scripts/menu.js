@@ -5,13 +5,13 @@ $( ".menu" ).hide();
 $( ".hamburger" ).click(function() {
 $( ".menu" ).slideToggle( "slow", function() {
 $( ".hamburger" ).hide();
-// $( ".cross" ).show();
+$( ".cross" ).show();
 });
 });
 
 $( ".cross" ).click(function() {
 $( ".menu" ).slideToggle( "slow", function() {
-$(".menu").remove();
+
 $( ".cross" ).hide();
 $( ".hamburger" ).show();
 });
