@@ -20,6 +20,7 @@ body {
   padding:0 15px 0 15px;
   width: 60px;
   height: 45px;
+  visibility: visible;
 }
 .hamburger{
   z-index:9;
@@ -28,6 +29,10 @@ body {
 .cross{
   z-index:11;
   font-size: 60px;
+}
+
+nav {
+  visibility: hidden;
 }
 
 .menu{z-index:10; font-weight:bold; font-size:1em; width:100%; background:#FFFFF0;  position:absolute; margin-top: 12vh; text-align:center; font-size:1em;}
@@ -224,5 +229,38 @@ a:hover{
 #footer {
   background-color: rgba(233, 78, 119, 0.2);
   height: 7.2vh;
+  display: flex;
+  justify-content: center;
+}
 
+@media (min-width: 768px) {
+  nav {
+    visibility: visible;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    height: 40vh;
+    top: 10vh;
+    right: 5vw;
+    max-width: 3em;
+    mix-blend-mode: screen;
+
+    list-style: none;
+  }
+i.fa {
+    display: list-item;
+    font-size: 2em;
+
+  }
+  .socials i.fa {
+    display: flex;
+  }
+  a {
+    text-decoration: none;
+  }
+  .hamburger, .cross {
+    visibility: hidden;
+  }
 }
