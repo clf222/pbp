@@ -121,20 +121,25 @@
 
   </div>
     <div id="location">
+      <div id="map">
+      </div>
 
-      <!-- <picture>
-        <source
-          media="(min-width: 1000px)"
-          srcset="images/big-map.png">
-          <source
-            media="(min-width: 768px)"
-            srcset="images/desktop-map.png">
-          <source
-            media="(max-width: 767px)"
-            srcset="images/mobile-map.png">
-
-          <img src="images/mobile-map.png" alt="map" />
-</picture> -->
+      <script>
+       function initMap() {
+         var uluru = {lat: 21.283742, lng: -157.832527};
+         var map = new google.maps.Map(document.getElementById('map'), {
+           zoom: 4,
+           center: uluru
+         });
+         var marker = new google.maps.Marker({
+           position: uluru,
+           map: map
+         });
+       }
+     </script>
+     <script async defer
+     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8kVOFuPQmYRBKNTK5vCUtn7-JxXxJyyM&callback=initMap">
+     </script>
 
       <div class="address">
         <h2 class="heading page-heading">Location</h2>

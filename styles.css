@@ -324,11 +324,12 @@ button.content {
   flex-flow: column nowrap;
   justify-content: space-between;
   align-items: center;
-  height: 98.2vh;
+  height: 100vh;
 }
-#location img {
+#map {
   height: 40vh;
   width: 100vw;
+  background-color: #f6f6f6;
 }
 
 #footer {
