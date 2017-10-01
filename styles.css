@@ -68,22 +68,26 @@ a{color:#336699;}
 .black {
  color: #151515;
 }
+.pale {
+  background-color: #FFFFF0;
+}
 
-}
-.heading {
-  font-family: 'Hind', sans-serif;
-  font-weight: bold;
-  font-size: 1.25em;
-}
-.page-heading {
+
+.uc, .page-heading {
   text-transform: uppercase;
 }
 
+.page-heading {
+  font-size: 2em;
+  margin-top: 3em;
+}
 
+p.light.heading {
+  font-size: 1.5em;
+}
 
 .body-text {
-  font-family: 'Hind', sans-serif;
-  font-size: 1em;
+  font-size: 1.25em;
 }
 
 button.content {
@@ -159,10 +163,12 @@ span.logo {
 .socials {
   padding-top: 1em;
   display: flex;
-  font-size: 2.75em;
+  font-size:2.25em;
   justify-content: space-around;
   color: #336699;
   width: 100%;
+margin-top: 2em;
+
 }
 
 
@@ -184,14 +190,14 @@ a:hover{
 
 #about {
   background-color: #336699;
-  padding-top: 12vh;
-  height: 52vh;
+  /*padding-top: 8vh;*/
+  height: 54vh;
   padding-right: .5em;
   padding-left: .5em;
   padding-bottom: 1em;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 
 }
@@ -200,12 +206,30 @@ a:hover{
 }
 #ig {
  background-color: #FFFFFF;
- height: 40vh;
+ height: 46vh;
+ display: flex;
+ flex-flow: column nowrap;
+ justify-content: flex-start;
+ align-items: center;
+}
+#ig-insert {
+display: flex;
+justify-content: space-around;
+width: 100%;
+}
+.ig-text {
+  margin-bottom: auto;
+  font-size: 2em;
+}
+.square {
+  height: 104px;
+  width: 104px;
+
+  background-color: #FFFFAA;
 }
 
 #menu {
   border-color: #FFFFF0;
-  padding-top: 8vh;
   padding-right: .5em;
   padding-left: .5em;
   padding-bottom: 1em;
@@ -214,6 +238,9 @@ a:hover{
   justify-content: flex-start;
   align-items: center;
   height: 100vh;
+}
+button.content {
+  margin-top: 2em;
 }
 .step {
   display: flex;
