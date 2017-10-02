@@ -40,12 +40,17 @@
 
     <div id="home">
 
-          <img class="hero" src="images/hero-1.jpg" alt="picture of bubble waffles" />
-</picture>
+
+    <picture class="hero">
+        <source  srcset="images/hero-small.jpg" media="(max-width: 767px)" />
+        <source  srcset="images/hero-large.jpg" media="(min-width:768px)"/>
+        <source  srcset="images/hero-largest.jpg" media="(min-width:1000px)"/>
+        <img src="images/hero-1.jpg" alt="My default image">
+    </picture>
 
       <div class="text">
-        <h3>Exceptionally decorated Hong Kong-style bubble waffles filled with Hawaiian inspired ice cream.</h3>
-        <h4>pop.<span class="pink">Bubble.</span>pop brings you the hottest trend in street food straight from Hong Kong to Waikiki! </h4>
+        <h3>Exceptionally decorated Hong Kong-style bubble waffles</h3><h3>Filled with Hawaiian-inspired ice cream.</h3>
+        <h3>pop.<span class="pink">Bubble.</span>pop<br>brings you the hottest trend in street food straight from Hong Kong to Waikiki! </h3>
 
 
     </div>
@@ -142,11 +147,11 @@
      </script>
 
       <div class="address">
-        <h2 class="heading page-heading">Location</h2>
-        <h4>123 Waikiki, Way  Waikiki HI 12345</h4>
+        <h2 class="heading page-heading dark">Location</h2>
+        <h4 dark>123 Waikiki Way</h4><h4>  Waikiki, HI 12345</h4>
       </div>
-      <div class="hours">
-        <h5>Hours: </h5>
+      <div class="hours dark">
+        <h3>Hours: </h3>
         <p>10am-8pm (Monday-Friday)</p>
         <p>10am-9pm (Saturday-Sunday)</p>
         <p>Telephone: 801-123-3333</p>

@@ -172,13 +172,13 @@ span.logo {
 
 }
 .socials {
-  padding-top: 1em;
+  padding: 1em 0;
   display: flex;
   font-size:2.25em;
   justify-content: space-around;
   color: #336699;
   width: 100%;
-margin-top: 2em;
+margin-top: 1em;
 
 }
 
@@ -191,11 +191,16 @@ a:hover{
   font-size: 1.5em;
   font-family: 'Baloo', sans-serif;
   line-height: 1.5em;
+  text-align: center;
 }
 #home h3, #home h4{
   color: #336699;
 }
-
+ #home img {
+  max-height: 34vh;
+  width: 100vw;
+  margin-bottom: 1em;
+}
 
 
 
@@ -331,17 +336,23 @@ button.content {
   width: 100vw;
   background-color: #f6f6f6;
 }
-
+.hours {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
 #footer {
   background-color: rgba(233, 78, 119, 0.2);
   height: 7.2vh;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: 768px) {
 header {
-  visibility: visible;
+  visibility:hidden;
 }
 
   nav {
