@@ -22,10 +22,10 @@ $(function () {
         $(window).resize(function () {
             if (!isAdded && $(window).width() >= 768) {
                  isAdded = true;
-                 $('#text').prepend('<h1>pop.<span>Bubble.</span>pop</h1>');
+                 $('.text').prepend('<h1>pop.<span>Bubble.</span>pop</h1>');
             } else if (isAdded && $(window).width() <768) {
                 isAdded = false;
-                $('#text').remove();
+                $('<h1>pop.<span>Bubble.</span></h1>').remove();
             }
         });
     });
