@@ -25,7 +25,6 @@ $(function () {
                  $('.text').prepend('<h1>pop.<span>Bubble.</span>pop</h1>');
             } else if (isAdded && $(window).width() <768) {
                 isAdded = false;
-
                 $('.text').find('h1').remove();
             }
         });
