@@ -37,13 +37,11 @@
         <a href="#events"><i class="fa fa-calendar"></i></a>
         <a href="#location"><i class="fa fa-map-marker"></i></a>
       </nav>
-
+ <div id="fullpage"
+ <div class="home-sec">
     <div id="home">
 
-      <img src='images/Background.jpg'
-       srcset='images/Background@3x.jpg 3651w,
-               images/Background@2x.jpg 2434w'
-       sizes='(min-width: 100vw)'/>
+      <img class= "hero" src="images/Background.jpg"/>
 
       <div class="text">
         <h3>Exceptionally decorated Hong Kong-style bubble waffles</h3><h3>Filled with Hawaiian-inspired ice cream.</h3>
@@ -58,6 +56,8 @@
           <a href="http://www.yelp.com" target="_blank"><i class="fa fa-yelp"></i></a>
      </div>
     </div>
+  </div>
+  <div class="about-sec">
 
     <div id="about">
 
@@ -66,7 +66,7 @@
         <p class="light body-text">Our waffles are made fresh to order. We fill them with the freshest ice cream from Aloha Dairy.</p>
     </div>
     <div id="ig">
-      <h2 class= "dark text ig-text">How do you #luvpBp?</h2>
+      <h2 class= "dark  ig-text">How do you #luvpBp?</h2>
       <div id="ig-insert">
         <div class="square">
         </div>
@@ -78,28 +78,41 @@
       <h3 class="dark"> Tag your photos with</h3>
       <h3 class="dark">#IluvpBp to enter our monthly drawing!</h3>
     </div>
+  </div>
+  <div class="menu-sec">
     <div id="menu">
       <img class="hero" src="images/menu-small.jpg" alt="pic of ice creams" />
 
       <div class="menu-text">
           <h2 class="page-heading dark">Menu</h2>
         <div class="step">
-          <span class="number">1</span><h5 class="dark">Choose Your Waffle</h5>
-          <p class="dark">Regular, Chocolate, Matcha or Red Velvet</p>
+          <span class="number">1</span>
+          <div class="step-text">
+            <h5 class="dark">Choose Your Waffle</h5>
+          <p class="dark para">Regular, Chocolate, Matcha or Red Velvet</p>
+        </div>
         </div>
       <div class="step">
-        <span class="number">2</span><h5 class="dark">Choose Your Ice Cream</h5>
-        <p class="dark">From Vanilla to our tropical favorites</p>
+        <span class="number">2</span>
+        <div class="step-text">
+          <h5 class="dark">Choose Your Ice Cream</h5>
+        <p class="dark para">From Vanilla to our tropical favorites</p>
+      </div>
       </div>
       <div class="step">
-        <span class="number">3</span><h5 class="dark">Choose Your Toppings</h5>
-        <p class="dark">From fruit toppings, syrups and whipped cream to edible gold!</p>
+        <span class="number">3</span>
+        <div class="step-text">
+          <h5 class="dark">Choose Your Toppings</h5>
+        <p class="dark para">From fruit toppings, syrups and whipped cream to edible gold!</p>
+      </div>
       </div>
 
-    </div>
-      <button class="content">View Menu</button>
-  </div>
 
+
+      <button class="content">View Menu</button>
+    </div>
+  </div>
+  <div class="events-sec">
     <div id="events">
         <img class="hero-events" src="images/events-small.jpg" alt="woman with bubble waffle"/>
             <h2 class="heading page-heading dark">Events</h2>
@@ -122,8 +135,9 @@
       </div>
       </div>
       <button class="content">View Calendar</button>
-
+    </div>
   </div>
+  <div class="location-sec">
     <div id="location">
       <div id="map">
       </div>
@@ -157,11 +171,14 @@
       </div>
       <button class="content">View Map</button>
     </div>
+  </div>
+</div>
     <div id="footer">
       <p><a href="mailto:pop.bubble.pop@comcast.net">Contact Us</a></p>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   <script src="scripts/menu.js"></script>
+  <script src="https://cdnjs.com/libraries/fullPage.js"></script>
   </body>
 </html>

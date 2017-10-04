@@ -8,14 +8,19 @@ $( ".hamburger" ).hide();
 $( ".cross" ).show();
 });
 });
+function closeMenu() {
+  $( ".menu" ).slideToggle( "slow", function() {
+    $( ".cross" ).hide();
+    $( ".hamburger" ).show();
+  });
+}
+$( ".cross" ).click(closeMenu)
 
-$( ".cross" ).click(function() {
-$( ".menu" ).slideToggle( "slow", function() {
 
-$( ".cross" ).hide();
-$( ".hamburger" ).show();
-});
-});
+$( ".menu li" ).click(closeMenu)
+
+
+
 
 $(function () {
         var isAdded = false;
@@ -29,4 +34,5 @@ $(function () {
             }
         });
     });
+    $('#fullpage').fullpage();
 });

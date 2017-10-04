@@ -252,8 +252,7 @@ width: 100%;
 
 #menu {
   background-color: #FFFFF0;
-  /*padding-right: .5em;
-  padding-left: .5em;*/
+
   padding-bottom: 1em;
   display: flex;
   flex-flow: column nowrap;
@@ -270,32 +269,43 @@ width: 100%;
 }
 button.content {
   margin-top: 2em;
+  align-self: center;
 }
+
 .step {
   display: flex;
-  justify-content: space-between;
+  flex-flow: row wrap;
+  justify-content: flex-start;
   align-items: flex-start;
-
+  margin-bottom: 1em;
 }
-
+.step-text {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+/*.para {
+  flex-basis: 10em;
+}*/
 .number {
-  font-size: 1.25em;
+  font-size: 2em;
   color: #FFFFF0;
   background-color: #E94E77;
   border-radius: 50%;
-  height: 32px;
-  width: 32px;
+  height: 48px;
+  width: 48px;
   margin-right: 2em;
-  line-height: 32px;
+  line-height: 48px;
   text-align: center;
+  margin: 0 .5em .5em 0;
 
 }
 .step h5, .step p {
   font-size: 1.25em;
-  flex-basis: 10em;
-  margin-top: 0;
+  margin: 0 auto 0 0;
 }
-
+.
 
 #events {
   background-color: rgba(233, 78, 119, 0.2);
@@ -405,5 +415,15 @@ i.fa {
   }
   .hamburger, .cross {
     visibility: hidden;
+  }
+
+.hero {
+    background-image: url("images/Background-2.jpg");
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    background-image: url("images/Background-3.jpg");
   }
 }
