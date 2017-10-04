@@ -226,6 +226,7 @@ a:hover{
 #about h2 {
   color: #FFFFFF;
 }
+
 #ig {
  background-color: #FFFFFF;
  height: 46vh;
@@ -285,9 +286,7 @@ button.content {
   justify-content: flex-start;
   align-items: flex-start;
 }
-/*.para {
-  flex-basis: 10em;
-}*/
+
 .number {
   font-size: 2em;
   color: #FFFFF0;
@@ -324,10 +323,11 @@ button.content {
   padding-bottom: 1em;*/
   display: flex;
   flex-flow: column nowrap;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   height:75vh;
-  margin-top: -10vh;
+  margin-top: 0;
+  margin-bottom: 10em;
 }
 .event {
   display: flex;
@@ -418,12 +418,12 @@ i.fa {
   }
 
 .hero {
-    background-image: url("images/Background-2.jpg");
+    img: url("images/Background-2.jpg");
   }
 }
 
 @media (min-width: 1200px) {
   .hero {
-    background-image: url("images/Background-3.jpg");
+    img: url("images/Background-3.jpg");
   }
 }
