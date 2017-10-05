@@ -75,6 +75,7 @@ a{color:#336699;}
 
 .uc, .page-heading {
   text-transform: uppercase;
+  text-align: center;
 }
 
 .page-heading {
@@ -103,7 +104,8 @@ button.content {
   background-color: #E94E77;
   border-color: #E94E77;
   color: #FFFFF0;
-  margin-bottom: 2em;
+  margin: 0 auto;
+
 }
 
 
@@ -253,8 +255,7 @@ width: 100%;
 
 #menu {
   background-color: #FFFFF0;
-
-  padding-bottom: 1em;
+  /*padding-bottom: 1em;*/
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
@@ -264,47 +265,59 @@ width: 100%;
 .menu-text {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-between;
-  padding: 0 .5em 1em .5em;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /*padding: -1em 1em 1em 1em;*/
+  margin: -1em 1em 0 1em;
+
   height: 62vh;
 }
-button.content {
-  margin-top: 2em;
-  align-self: center;
-}
+/*#menu button.content {
+align-self: center;
+}*/
+
 
 .step {
+  display: block;
+  margin: 0 auto;
+  /*flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items:flex-start;*/
+
+  padding-bottom: 0;
+}
+/*.step-text {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  align-items: flex-start;
-  margin-bottom: 1em;
-}
-.step-text {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
+  align-items: flex-start;0
+  margin: 1em 0;
+
+}*/
 
 .number {
-  font-size: 2em;
+  font-size: 1.5em;
   color: #FFFFF0;
   background-color: #E94E77;
   border-radius: 50%;
-  height: 48px;
-  width: 48px;
-  margin-right: 2em;
-  line-height: 48px;
+  height: 36px;
+  width: 36px;
+  margin: 0 auto 0 auto;
+  paddint-bottom: 1em;
+  line-height: 36px;
   text-align: center;
-  margin: 0 .5em .5em 0;
-
 }
 .step h5, .step p {
-  font-size: 1.25em;
-  margin: 0 auto 0 0;
+  font-size: 1em;
+  text-align: center;
+
 }
-.
+.step h5 {
+  margin: 1em auto .5em auto;
+}
+.step p {
+  margin: 0 auto .5em auto;
+}
 
 #events {
   background-color: rgba(233, 78, 119, 0.2);
@@ -374,7 +387,7 @@ button.content {
   align-items: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 450px) {
 header {
   visibility:hidden;
 }
@@ -417,13 +430,53 @@ i.fa {
     visibility: hidden;
   }
 
-.hero {
-    img: url("images/Background-2.jpg");
-  }
-}
 
-@media (min-width: 1200px) {
-  .hero {
-    img: url("images/Background-3.jpg");
+
+
+  #menu {
+    background-color: #FFFFF0;
+
+    padding-bottom: 1em;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+  }
+  .menu-text {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    padding: 0 .5em 1em .5em;
+    height: 62vh;
+  }
+
+
+  .step {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 1em;
+  }
+  .step-text {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .number {
+    font-size: 2em;
+    height: 48px;
+    width: 48px;
+    margin-right: 2em;
+    line-height: 48px;
+    margin: 0 .5em .5em 0;
+
+  }
+  .step h5, .step p {
+    font-size: 1.25em;
+    margin: 0 auto 0 0;
   }
 }

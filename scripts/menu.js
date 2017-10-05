@@ -14,10 +14,10 @@ function closeMenu() {
     $( ".hamburger" ).show();
   });
 }
-$( ".cross" ).click(closeMenu)
+$( ".cross" ).click(closeMenu);
 
 
-$( ".menu li" ).click(closeMenu)
+$( ".menu li" ).click(closeMenu);
 
 
 
@@ -34,5 +34,5 @@ $(function () {
             }
         });
     });
-    $('#fullpage').fullpage();
+    // $('#fullpage').fullpage();
 });
