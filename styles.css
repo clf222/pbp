@@ -104,7 +104,7 @@ button.content {
   background-color: #E94E77;
   border-color: #E94E77;
   color: #FFFFF0;
-  margin: 0 auto;
+  margin: 0 auto ;
 
 }
 
@@ -303,20 +303,21 @@ align-self: center;
   height: 36px;
   width: 36px;
   margin: 0 auto 0 auto;
-  paddint-bottom: 1em;
+
   line-height: 36px;
   text-align: center;
 }
 .step h5, .step p {
   font-size: 1em;
   text-align: center;
-
 }
 .step h5 {
   margin: 1em auto .5em auto;
+  flex-basis: 60%;
 }
 .step p {
   margin: 0 auto .5em auto;
+  flex-basis: 60%;
 }
 
 #events {
@@ -440,30 +441,36 @@ i.fa {
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     height: 100vh;
   }
   .menu-text {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
-    padding: 0 .5em 1em .5em;
+    padding: 0 0 0 0;
     height: 62vh;
   }
 
 
   .step {
     display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 2em;
+    flex-basis: 100%;
+  }
+
+.step-text {
+  flex-basis: 50em;
+  align-self: flex-start;
+    display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-bottom: 1em;
-  }
-  .step-text {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
+    margin: 0 0 0 0;
+
   }
 
   .number {
@@ -472,11 +479,18 @@ i.fa {
     width: 48px;
     margin-right: 2em;
     line-height: 48px;
-    margin: 0 .5em .5em 0;
+    margin: 0 1em .5em 0;
+
+
 
   }
   .step h5, .step p {
     font-size: 1.25em;
-    margin: 0 auto 0 0;
+    margin-top: 0;
+    text-align: left;
+  }
+  button.content {
+    margin-top: 1em;
+    padding: 1em auto;
   }
 }
