@@ -41,7 +41,17 @@
  <div class="home-sec">
     <div id="home">
 
-      <img class= "hero" src="images/Background.jpg"/>
+      <!-- <img class= "hero" src="images/Background.jpg"/> -->
+
+      <img sizes="(max-width: 450px) 100vw,
+			(min-width: 451px) 100vw,
+      (min-width: 1000px) 100vw,
+      calc(100vw)"
+	srcset="images/hero-sm-1x.jpg 450w,
+			images/hero-med-2x.jpg 700w,
+			images/hero-lg-3x.jpg 1000w"
+
+	src="hero-med-2x.jpg" alt="pic of bubble waffles">
 
       <div class="text">
         <h3>Exceptionally decorated Hong Kong-style bubble waffles</h3><h3>Filled with Hawaiian-inspired ice cream.</h3>
