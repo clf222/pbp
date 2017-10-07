@@ -433,7 +433,7 @@ width: 100%;
   align-items: center;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 450px) {
 header {
   visibility:hidden;
 }
@@ -487,7 +487,7 @@ i.fa {
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     height: 100vh;
   }
   .menu-text {
