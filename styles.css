@@ -84,14 +84,8 @@ a{color:#336699;}
 
   /*margin-top: 3em;*/
 }
-h1 {
 
 
-}
-p.light.heading {
-  font-size: 2em;
-
-}
 
 .body-text {
   font-size: 1.25em;
@@ -221,14 +215,27 @@ a:hover{
   padding-bottom: 1em;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
-
-}
-#about h2 {
-  color: #FFFFFF;
 }
 
+  .about-text {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 3em 0 1em;
+  }
+}
+.about-text h2 {
+  text-align: center;
+}
+p.light.heading {
+  font-size: 2em;
+  display: flex;
+  margin: 0 auto 2em auto;
+
+}
 #ig {
  background-color: #FFFFFF;
  height: 46vh;
@@ -413,8 +420,9 @@ h1 span {
     top: 10vh;
     right: 5vw;
     max-width: 3em;
-  mix-blend-mode: color-dodge;
+    mix-blend-mode: color-dodge;
     list-style: none;
+    z-index: 12;
   }
 i.fa {
     display: list-item;

@@ -46,7 +46,7 @@
       <img sizes="(max-width: 450px) 100vw,
 			(min-width: 451px) 100vw,
       (min-width: 1000px) 100vw,
-      calc(100vw)"
+      calc(100%)"
 	srcset="images/hero-sm-1x.jpg 450w,
 			images/hero-med-2x.jpg 700w,
 			images/hero-lg-3x.jpg 1000w"
@@ -55,7 +55,7 @@
 
       <div class="text">
         <h3>Exceptionally decorated Hong Kong-style bubble waffles</h3><h3>Filled with Hawaiian-inspired ice cream.</h3>
-        <h3>pop.<span class="pink">Bubble.</span>pop<br>brings you the hottest trend in street food straight from Hong Kong to Waikiki! </h3>
+        <h3>pop.<span class="pink">Bubble.</span>pop<br>Brings you the hottest trend in street food straight from Hong Kong to Waikiki! </h3>
 
 
     </div>
@@ -71,9 +71,12 @@
 
     <div id="about">
 
-      <h2 class="page-heading">Bubble Waffles</h2>
+
+      <div class="about-text">
+        <h2 class="page-heading light">Bubble Waffles</h2>
         <p class="light heading">Choose a waffle, choose an ice cream, and choose you your topping from fresh fruit to trendy gold and silver flakes. </p>
         <p class="light body-text">Our waffles are made fresh to order. We fill them with the freshest ice cream from Aloha Dairy.</p>
+      </div>
     </div>
     <div id="ig">
       <h2 class= "dark  ig-text">How do you #luvpBp?</h2>
@@ -90,8 +93,15 @@
     </div>
   </div>
   <div class="menu-sec">
+    <picture>
+      <source media="(max-width: 767px)" srcset="images/small.jpg">
+<source media="(min-width: 768px)" srcset="images/menu-vertical.jpg">
+<img src="images/small.jpg" alt="ice cream">
+    </picture>
     <div id="menu">
-      <img class="hero" src="images/menu-small.jpg" alt="pic of ice creams" />
+
+
+      <!-- <img class="hero" src="images/menu-small.jpg"s alt="pic of ice creams" /> -->
       <h2 class="page-heading dark">Menu</h2>
       <div class="menu-text">
 
