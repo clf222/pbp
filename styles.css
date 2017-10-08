@@ -110,6 +110,7 @@ h4 {
   font-size: 1.25em;
   font-family: 'Hind', sans-serif;
   font-weight: bolder;
+  margin-bottom: 0;
 }
 p {
   margin: 0;
@@ -409,9 +410,8 @@ p.date {
 
 #location {
   background-color: #FFFFF0;
-  padding-right: .5em;
-  padding-left: .5em;
-  padding-bottom: 1em;
+
+  /*padding-bottom: 1em;*/
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
@@ -420,10 +420,28 @@ p.date {
   background-image: url("images/gplay.png");
   background-repeat: repeat;
 }
+.location-text {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: space-between;
+  justify-content: space-between;
+  margin-bottom:0;
+  height: 100vh;
+}
+.location-text h2 {
+  margin-bottom: 0;
+}
+
 #map {
   height: 40vh;
   width: 100vw;
   background-color: #f6f6f6;
+}
+.address {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .hours {
@@ -434,10 +452,14 @@ p.date {
 }
 #footer {
   background-color: rgba(233, 78, 119, 0.2);
-  height: 7.2vh;
+  /*align-self: flex-end;*/
+  height: 8vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: auto;
+
 }
 
 @media (min-width: 450px) {
@@ -554,7 +576,42 @@ i.fa {
   .step p {
     margin: 0 auto 1em 0;
   }
+}
 
+@media (min-width: 768px) {
+  #location {
+    background-color: #FFFFF0;
+    padding: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background-image: url("images/gplay.png");
+    background-repeat: repeat;
+  }
+  .location-text {
+    margin-top: 2vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 67vw;
+  }
+  #map {
+    height: 100vh;
+    width: 33vw;
+    background-color: #f6f6f6;
+  }
 
-
+  .hours {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+footer {
+  align-self: flex-start;
+}
 }
