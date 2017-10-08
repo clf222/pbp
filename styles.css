@@ -153,9 +153,9 @@ span.logo {
   margin: 0;
   display: block;
 }*/
-#events img.hero-events {
-  width: 100%;
-  max-height: 30vh;
+ picture.hero-events {
+  width: 100vw;
+  max-height: 25vh;
   margin: 0;
 }
 
@@ -182,6 +182,9 @@ span.logo {
 
 a:hover{
   color: #E94E77;
+}
+a.active {
+  text-decoration: underline;
 }
 
 #home h3 {
@@ -367,8 +370,10 @@ box-shadow: 4px 1px 2px 1px rgba(21,21,21,0.3);
 }
 
 #events {
+  background-image: url(https://clf222.github.io/pbp/images/Background.jpg);
+  background-size: cover;
   background-color: rgba(233, 78, 119, 0.2);
-  background-image: url("images/gplay.png");
+  /*background-image: url("images/gplay.png");*/
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
@@ -376,14 +381,24 @@ box-shadow: 4px 1px 2px 1px rgba(21,21,21,0.3);
   height: 100vh;
 }
 #events-text {
-  /*padding-right: .5em;
-  padding-left: .5em;
-  padding-bottom: 1em;*/
+  background: rgba(255,255,255,.7);
+  padding: 1.5em;
+  /* padding: 20px; */
+  /*margin-top: 10vh;
+  margin-right: 2em;
+  margin-left: 2em;*/
+  /* -webkit-box-shadow: 10px 10px 19px 0px rgba(115,115,115,0.29); */
+  -moz-box-shadow: 10px 10px 19px 0px rgba(115,115,115,0.29);
+  /* box-shadow: 18px 12px 35px 0px rgba(0, 0, 0, 0.29); */
+  /* -webkit-box-shadow: 0px 18px 28px 0px rgba(181,181,181,1); */
+  -moz-box-shadow: 0px 18px 28px 0px rgba(181,181,181,1);
+  box-shadow: 0px 18px 28px 0px rgba(41, 41, 41, 0.4);
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
   align-items: center;
   height:70vh;
+  width: 90vw;
   margin-top: 0;
   margin-bottom: 1em;
 }
@@ -493,7 +508,7 @@ h1 span {
     top: 10vh;
     right: 5vw;
     max-width: 3em;
-    mix-blend-mode: color-dodge;
+
     list-style: none;
     z-index: 12;
   }
@@ -501,12 +516,17 @@ i.fa {
     display: list-item;
     font-size: 2em;
 
+
   }
   .socials i.fa {
     display: flex;
   }
   a {
     text-decoration: none;
+    color: #336699;
+  }
+  a:active {
+    color:
   }
   .hamburger, .cross {
     visibility: hidden;
