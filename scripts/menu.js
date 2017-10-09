@@ -1,13 +1,15 @@
 $( document ).ready(function() {
+  $('.scrollspy').scrollSpy();
 
-$( ".cross" ).hide();
-$( ".menu" ).hide();
-$( ".hamburger" ).click(function() {
-$( ".menu" ).slideToggle( "slow", function() {
-$( ".hamburger" ).hide();
-$( ".cross" ).show();
-});
-});
+
+  $( ".cross" ).hide();
+  $( ".menu" ).hide();
+  $( ".hamburger" ).click(function() {
+      $( ".menu" ).slideToggle( "slow", function() {
+        $( ".hamburger" ).hide();
+        $( ".cross" ).show();
+      });
+  });
 function closeMenu() {
   $( ".menu" ).slideToggle( "slow", function() {
     $( ".cross" ).hide();

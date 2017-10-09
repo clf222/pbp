@@ -1,10 +1,9 @@
 html {
   font-size: 100%;
-}
-body {
   font-family: 'Hind', sans-serif;
   color: #151515;
 }
+
 .hamburger, .cross {
   background-color: #336699;
   border-radius: 5px;
@@ -59,7 +58,7 @@ a{color:#336699;}
 .dark {
  color: #336699;
 }
-.pink {
+.pink-color {
  color: #E94E77;
 }
 .light {
@@ -204,7 +203,8 @@ a.active {
   background-image: url("images/gplay.png");
   background-repeat: repeat;
   /*padding-top: 8vh;*/
-  height: 54vh;
+  height: 58vh;
+
   padding-right: .5em;
   padding-left: .5em;
   padding-bottom: 1em;
@@ -228,7 +228,7 @@ a.active {
     margin-left: 2em;
     border-radius: 10px;
     max-height: 52vh;
-    max-width: 90vw;
+    max-width: 80vw;
     /* -webkit-box-shadow: 10px 10px 19px 0px rgba(115,115,115,0.29); */
     -moz-box-shadow: 10px 10px 19px 0px rgba(115,115,115,0.29);
     /* box-shadow: 18px 12px 35px 0px rgba(0, 0, 0, 0.29); */
@@ -439,7 +439,7 @@ p.date {
   display: flex;
   flex-flow: column nowrap;
   align-items: space-between;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin-bottom:0;
   height: 100vh;
 }
@@ -475,6 +475,7 @@ p.date {
   align-items: center;
   margin-top: auto;
 
+
 }
 
 @media (min-width: 450px) {
@@ -498,6 +499,9 @@ h1 span {
 }
 
   nav {
+    background-color: #336699;
+    padding: .5em;
+    border-radius: 5px;
     visibility: visible;
     display: flex;
     flex-flow: column;
@@ -508,10 +512,16 @@ h1 span {
     top: 10vh;
     right: 5vw;
     max-width: 3em;
-
     list-style: none;
-    z-index: 12;
+    z-index: 8;
+    -webkit-box-shadow: 2px 2px 3px 1px rgba(21,21,21,0.5);
+    -moz-box-shadow: 2px 2px 3px 1px rgba(21,21,21,0.5);
+    box-shadow: 2px 2px 3px 1px rgba(21,21,21,0.5);
   }
+  nav a {
+    color: #FFF;
+  }
+
 i.fa {
     display: list-item;
     font-size: 2em;
@@ -603,7 +613,7 @@ i.fa {
     background-color: #FFFFF0;
     padding: 0;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
     height: 100vh;
@@ -614,7 +624,7 @@ i.fa {
     margin-top: 2vh;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     margin: 0 auto;
     width: 67vw;
@@ -634,5 +644,6 @@ i.fa {
 footer {
   /*align-self: flex-start;*/
   width: 100%;
+  margin-top: 0;
 }
 }
