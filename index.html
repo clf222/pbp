@@ -75,14 +75,14 @@
        </div>
        <div id="ig">
          <h2 class="dark  ig-text">How do you #luvpBp?</h2>
-         <div id="ig-insert">
-           <div class="square">
+         <div id="instafeed">
+           <!-- <div class="square">
            </div>
            <div class="square">
            </div>
            <div class="square">
            </div>
-         </div>
+         </div> -->
          <h3 class="dark"> Tag your photos with</h3>
          <h3 class="dark">#IluvpBp to enter our monthly drawing!</h3>
        </div>
@@ -173,7 +173,15 @@
 
        </div>
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-     <script src="scripts/menu.js"></script>
+       <script src="scripts/menu.js"></script>
        <script src="scripts/materialize.js"></script>
+       <script type="text/javascript" src="scripts/instafeed.min.js"></script>
+       <script type="text/javascript">
+        var feed = new Instafeed({
+        clientId: '647085fffb7f453fb16f01534a55c81c'
+    });
+    feed.run();
+</script>
+
   </body>
 </html>
