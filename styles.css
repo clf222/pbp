@@ -79,7 +79,7 @@ a{color:#336699;}
 
 .page-heading {
   font-size: 1.5em;
-  margin: 1em auto 2em auto;
+  margin: 1em auto 0 auto;
 }
 
 
@@ -388,6 +388,7 @@ box-shadow: 4px 1px 2px 1px rgba(21,21,21,0.3);
   margin-right: 2em;
   margin-left: 2em;
   width: 90vw;
+  height: 80vh;
   /* -webkit-box-shadow: 10px 10px 19px 0px rgba(115,115,115,0.29); */
   -moz-box-shadow: 10px 10px 19px 0px rgba(115,115,115,0.29);
   /* box-shadow: 18px 12px 35px 0px rgba(0, 0, 0, 0.29); */
@@ -398,13 +399,11 @@ box-shadow: 4px 1px 2px 1px rgba(21,21,21,0.3);
   flex-flow: column nowrap;
   justify-content: space-between;
   align-items: center;
-  /*height:70vh;*/
-
 
 }
-#events-text h2.page-heading {
+/*#events-text h2.page-heading {
   margin-bottom: 0;
-}
+}*/
 .event {
   display: flex;
   flex-flow: column nowrap;
