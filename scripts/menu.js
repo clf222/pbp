@@ -27,7 +27,7 @@ $( ".menu li" ).click(closeMenu);
 $(function () {
         var isAdded = false;
         $(window).resize(function () {
-            if (!isAdded && $(window).width() >= 768) {
+            if (!isAdded && $(window).width() >= 768) && !($("h1").length){
                  isAdded = true;
                  $('.text').prepend('<h1>pop.<span>Bubble.</span>pop</h1>');
             } else if (isAdded && $(window).width() <768) {
@@ -36,5 +36,5 @@ $(function () {
             }
         });
     });
-    // $('#fullpage').fullpage();
+
 });
