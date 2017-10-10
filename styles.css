@@ -152,8 +152,9 @@ span.logo {
   margin: 0;
   display: block;
 }*/
-
-
+h1 {
+  display: none;
+}
 .text {
   display: flex;
   flex-flow: column nowrap;
@@ -483,7 +484,7 @@ header {
 }
 h1 {
   font-size: 4em;
-  visibility: visible;
+  display: inherit;
   font-family: 'Baloo', sans-serif;
   color: #336699;
 }
@@ -509,7 +510,7 @@ h1 span {
     position: fixed;
     height: 40vh;
     top: 10vh;
-    right: 5vw;
+    right: 4vw;
     max-width: 3em;
     list-style: none;
     z-index: 12;
