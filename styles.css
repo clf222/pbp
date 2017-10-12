@@ -146,24 +146,12 @@ span.logo {
 #home {background-color: #FFFFFF;
   height: 100vh;display: flex;flex-flow: column nowrap;justify-content: flex-start;align-items: center;background-image: url(https://clf222.github.io/pbp/images/hero-lg-3x.jpg);background-size: cover;}
 
-/*#home img.hero, #menu img.hero{
-  width: 100%;
-  max-height: 34vh;
-  margin: 0;
-  display: block;
-}*/
-h1 {
-  display: none;
-}
+
 .text {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  /* padding-left: .5em; */
-  /* padding: 0 1.5em; */
-  /* padding-top: 5vh; */
-  /* background: rgba(255,255,255,.7); */
 }
 .socials {
   padding: 1em 0;
@@ -172,7 +160,6 @@ h1 {
   justify-content: space-around;
   color: #336699;
   width: 100%;
-  /* margin-top: 1em; */
 }
 
 
@@ -203,12 +190,8 @@ a.active {
   background-color: #336699;
   background-image: url("images/gplay.png");
   background-repeat: repeat;
-  /*padding-top: 8vh;*/
-  height: 58vh;
 
-  padding-right: .5em;
-  padding-left: .5em;
-  padding-bottom: 1em;
+  height: 40vh;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
@@ -218,37 +201,27 @@ a.active {
   .about-text {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    /*padding: 0 3em 0 1em;*/
-    background: rgba(255,255,240,.8);
-    padding: 1.5em 2em;
-    /* padding: 20px; */
-    margin-top: 2vh;
+    padding: 1.5em;
+    width: 60vw;
+    margin-bottom: 3vh;
     margin-right: 2em;
     margin-left: 2em;
-    border-radius: 10px;
-    max-height: 52vh;
-    max-width: 80vw;
-    /* -webkit-box-shadow: 10px 10px 19px 0px rgba(115,115,115,0.29); */
-    -moz-box-shadow: 10px 10px 19px 0px rgba(115,115,115,0.29);
-    /* box-shadow: 18px 12px 35px 0px rgba(0, 0, 0, 0.29); */
-    /* -webkit-box-shadow: 0px 18px 28px 0px rgba(181,181,181,1); */
-    -moz-box-shadow: 0px 18px 28px 0px rgba(181,181,181,1);
-    box-shadow: 0px 18px 28px 0px rgba(41, 41, 41, 0.4);
+    max-height: 40vh;
   }
 
 .about-text h2 {
   text-align: center;
 }
-p.dark.heading {
+p.light.heading {
   font-size: 1.5em;
-  margin: 0 auto 1em auto;
+  margin: 2vh auto 2vh auto;
   text-align: center;
 }
 #ig {
  background-color: #FFFFFF;
- height: 46vh;
+ height: 60vh;
  display: flex;
  flex-flow: column nowrap;
  justify-content: flex-start;
@@ -307,10 +280,12 @@ width: 100%;
   justify-content: space-between;
   align-items: flex-start;
   /*padding: -1em 1em 1em 1em;*/
-  margin: 10vh 1em 0;
+  margin: 10vh 2em 0;
   background: rgba(255,255,240,.8);
-  padding: 3em 3em 6em 3em;
-  border-radius: 10px;
+  padding: 1.5em;
+  width: 60vw;
+  /*padding: 3em 3em 6em 3em;*/
+
   /* -webkit-box-shadow: 10px 10px 19px 0px rgba(115,115,115,0.29); */
   -moz-box-shadow: 10px 10px 19px 0px rgba(115,115,115,0.29);
   /* box-shadow: 18px 12px 35px 0px rgba(0, 0, 0, 0.29); */
@@ -370,7 +345,8 @@ box-shadow: 4px 1px 2px 1px rgba(21,21,21,0.3);
   background-image: url(https://clf222.github.io/pbp/images/Background.jpg);
   background-size: cover;
   background-color: rgba(233, 78, 119, 0.2);
-  /*background-image: url("images/gplay.png");*/
+  padding: 1.5em;
+
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
@@ -388,7 +364,7 @@ box-shadow: 4px 1px 2px 1px rgba(21,21,21,0.3);
   margin-top: 10vh;
   margin-right: 2em;
   margin-left: 2em;
-  width: 90vw;
+  width: 60vw;
   height: 80vh;
   /* -webkit-box-shadow: 10px 10px 19px 0px rgba(115,115,115,0.29); */
   -moz-box-shadow: 10px 10px 19px 0px rgba(115,115,115,0.29);
@@ -484,7 +460,7 @@ header {
 }
 h1 {
   font-size: 4em;
-  display: inherit;
+  /*display: inherit;*/
   font-family: 'Baloo', sans-serif;
   color: #336699;
 }
@@ -627,11 +603,11 @@ i.fa {
     justify-content: flex-start;
     align-items: center;
     margin: 0 auto;
-    width: 67vw;
+    width: 40vw;
   }
   #map {
     height: 100vh;
-    width: 33vw;
+    width: 60vw;
     background-color: #f6f6f6;
   }
 
