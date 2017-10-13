@@ -1,6 +1,8 @@
 $( document ).ready(function() {
-  $('#fullpage').fullpage();
-
+  $('#fullpage').fullpage({
+  	anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage'],
+  	menu: '#myMenu'
+  });
 
   $( ".cross" ).hide();
   $( ".menu" ).hide();
