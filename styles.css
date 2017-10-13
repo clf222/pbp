@@ -224,12 +224,16 @@ p.light.heading {
 }
 #instafeed {
 display: flex;
-justify-content: space-around;
-width: 100%;
+flex-flow: column nowrap;
+justify-content: center;
+align-items: center;
+text-align: center;
+width: 60vw;
 }
 .ig-text {
   margin-bottom: auto;
   font-size: 2em;
+
 }
 .square {
   height: 104px;
