@@ -179,11 +179,6 @@ a.active {
 #home h3, #home h4{
   color: #336699;
 }
- /*#home img {
-
-  margin-bottom: 1em;
-}*/
-
 
 
 #about {
@@ -299,20 +294,8 @@ width: 100%;
 .step {
   display: block;
   margin: 0 auto;
-  /*flex-flow: column nowrap;
-  justify-content: space-around;
-  align-items:flex-start;*/
-
   padding-bottom: 0;
 }
-/*.step-text {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items: flex-start;0
-  margin: 1em 0;
-
-}*/
 
 .number {
   font-size: 1.5em;
@@ -361,7 +344,7 @@ box-shadow: 4px 1px 2px 1px rgba(21,21,21,0.3);
   background: rgba(255,255,255,.7);
   padding: 1.5em;
   /* padding: 20px; */
-  margin-top: 10vh;
+  margin-top: 0;
   margin-right: 2em;
   margin-left: 2em;
   width: 60vw;

@@ -22,19 +22,13 @@ $( ".cross" ).click(closeMenu);
 $( ".menu li" ).click(closeMenu);
 
 
-
 //
-// $(function () {
-//
-//       $(window).resize(function() {
-//         if $(window).width() >=450 {
-//           $("h1").removeClass(".hideme");
-//         } else if {
-//           $(window).width() <450 {
-//             $("h1").addClass(".hideme");
-//           }
-//         }
-//       });
+// $('#fullpage').fullpage({
+// 	afterResize: function(){
+// 		var pluginContainer = $(this);
+// 		alert("The sections have finished resizing");
+// 	}
+// });
         var isAdded = false;
         $(window).resize(function () {
             if (!isAdded && ($(window).width() >= 450) && !($("h1").length)){
