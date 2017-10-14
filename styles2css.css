@@ -96,7 +96,7 @@ button.content {
   background-color: #E94E77;
   border-color: #E94E77;
   color: #FFFFF0;
-  margin:0 auto 1em;
+  margin: auto auto 1em;
   padding: 1em auto;
   font-size: 1.25em;
   -webkit-box-shadow: 2px 1px 2px 1px rgba(21,21,21,0.3);
@@ -333,14 +333,10 @@ box-shadow: 4px 1px 2px 1px rgba(21,21,21,0.3);
   padding: 1.5em;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   height: 100vh;
 }
-
-
-
-
 .events-text {
   background: rgba(255,255,255,.7);
   padding: 1.5em;
@@ -358,7 +354,7 @@ box-shadow: 4px 1px 2px 1px rgba(21,21,21,0.3);
   flex-flow: column nowrap;
   justify-content: flex-start;
   /*align-items: center;*/
-  align-items: centers
+  align-items: center;
 
 }
 /*#events-text h2.page-heading {
@@ -367,15 +363,15 @@ box-shadow: 4px 1px 2px 1px rgba(21,21,21,0.3);
 .event-listing {
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
-
+  justify-content: space-between;
+  flex-basis: 40vw;
 }
 .event {
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-top: 1em;
+  margin: 1em;
 }
 p.date {
   margin-top: 0;
