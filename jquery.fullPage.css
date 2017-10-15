@@ -112,6 +112,13 @@ html.fp-enabled,
 }
 #fp-nav.right {
     right: 17px;
+    background-color: #336699;
+    height: 15vh;
+    border-radius: 5px;
+    -webkit-box-shadow: 2px 1px 2px 1px rgba(21,21,21,0.3);
+    -moz-box-shadow: 2px 1px 2px 1px rgba(21,21,21,0.3);
+    box-shadow: 2px 1px 2px 1px rgba(21,21,21,0.3);
+
 }
 #fp-nav.left {
     left: 17px;
@@ -174,7 +181,7 @@ html.fp-enabled,
     height: 4px;
     width: 4px;
     border: 0;
-    background: #333;
+    background: #FFF;
     left: 50%;
     top: 50%;
     margin: -2px 0 0 -2px;
