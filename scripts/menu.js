@@ -3,6 +3,7 @@ $( document ).ready(function() {
   	anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage'],
   	menu: '#myMenu',
     navigation: true,
+
   });
 
   $( ".cross" ).hide();
