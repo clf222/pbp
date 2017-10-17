@@ -419,12 +419,23 @@ p.date {
   justify-content: flex-end;
   align-items: center;
 }
+.address h4 {
+  margin-top: 0;
+  line-height: 1.5em;
+}
 
 .hours {
+  margin-top: 1em;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: center;
+}
+.hours h3.dark {
+  margin-top: 3em;
+}
+.hours p {
+  line-height: 1.5em;
 }
 #footer {
   background-color: rgba(233, 78, 119, 0.2);
