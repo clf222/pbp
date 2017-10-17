@@ -360,22 +360,18 @@ box-shadow: 4px 1px 2px 1px rgba(21,21,21,0.3);
 /*#events-text h2.page-heading {
   margin-bottom: 0;
 }*/
-.event-listing {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  flex-basis: 40vw;
-}
+
 .event {
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   margin: 1em;
 }
 p.date {
   margin-top: 0;
   font-weight: bold;
+  color: #336699;
 }
 .party {
   font-size: 1.5em;
@@ -542,22 +538,17 @@ i.fa {
   .step {
     display: flex;
     flex-flow: row nowrap;
-
     justify-content: flex-start;
     align-items: flex-start;
     margin: 1em 1em 2em 1em;
-
   }
 
 .step-text {
-
-
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-start;
     align-items: flex-start;
     margin: 0 0 0 16px;
-
   }
 
   .number {
@@ -609,7 +600,15 @@ i.fa {
     width: 60vw;
     background-color: #f6f6f6;
   }
-
+.events-text {
+  height: 60vh;
+}
+.event-listing {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  flex-basis: 40vw;
+}
   .hours {
     display: flex;
     flex-flow: column nowrap;
