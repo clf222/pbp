@@ -30,9 +30,7 @@ html {
   font-size: 60px;
 }
 
-nav {
-  visibility: hidden;
-}
+
 
 .menu{z-index:10; font-weight:bold; font-size:1em; width:100%; background:#FFFFF0;  position:absolute; margin-top: 12vh; text-align:center; font-size:1em;}
 .menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
@@ -114,9 +112,6 @@ h4 {
 p {
   margin: 0;
 }
-#myMenu {
-  display: none;
-}
 
 /*END DEFAULT TEXT STYLES*/
 header
@@ -133,7 +128,39 @@ header
     right: 0;
     z-index: 8;
 }
+nav#myMenu {
+  background-color: #336699;
+  padding: .5em;
+  border-radius: 5px;
+  overflow: hidden;
+  /*display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;*/
+  position: fixed;
+  height: 40vh;
+  top: 10vh;
+  right: 4vw;
+  /*max-width: 3em;*/
+  list-style: none;
+  z-index: 12;
+  -webkit-box-shadow: 2px 2px 3px 1px rgba(21,21,21,0.5);
+  -moz-box-shadow: 2px 2px 3px 1px rgba(21,21,21,0.5);
+  box-shadow: 2px 2px 3px 1px rgba(21,21,21,0.5);
+}
+nav#myMenu > ul {
+  list-style-type: none;
+}
+nav#myMenu > ul > li {
+  display: block;
+}
+nav a {
+  color: #FFF;
+}
 
+li i.fa {
+  font-size: 2em;
+}
 
 .wordmark h3  {
 font-size: 1.25em;
@@ -446,17 +473,17 @@ p.date {
 header {
   visibility:hidden;
 }
-ul.#myMenu {
+/*nav#myMenu {
   display: inline;
   background-color: #336699;
   padding: .5em;
-  border-radius: 5px;
-  visibility: visible;
+  border-radius: 5px;*/
+  /*visibility: visible;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
-  align-items: center;
-  position: fixed;
+  align-items: center;*/
+  /*position: fixed;
   height: 50vh;
   top: 10vh;
   right: 4vw;
@@ -466,9 +493,8 @@ ul.#myMenu {
   -webkit-box-shadow: 2px 2px 3px 1px rgba(21,21,21,0.5);
   -moz-box-shadow: 2px 2px 3px 1px rgba(21,21,21,0.5);
   box-shadow: 2px 2px 3px 1px rgba(21,21,21,0.5);
-
-}
-li a i.fa {
+}*/
+/*li a i.fa {
   background-color: #336699;
   padding: .5em;
   border-radius: 5px;
@@ -488,7 +514,7 @@ li a i.fa {
   -moz-box-shadow: 2px 2px 3px 1px rgba(21,21,21,0.5);
   box-shadow: 2px 2px 3px 1px rgba(21,21,21,0.5);
 
-}
+}*/
 h1 {
   font-size: 4em;
   /*display: inherit;*/
@@ -505,33 +531,7 @@ h1 span {
   font-size: 2em;
 }
 
-  nav {
-    background-color: #336699;
-    padding: .5em;
-    border-radius: 5px;
-    visibility: visible;
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    height: 40vh;
-    top: 10vh;
-    right: 4vw;
-    /*max-width: 3em;*/
-    list-style: none;
-    z-index: 12;
-    -webkit-box-shadow: 2px 2px 3px 1px rgba(21,21,21,0.5);
-    -moz-box-shadow: 2px 2px 3px 1px rgba(21,21,21,0.5);
-    box-shadow: 2px 2px 3px 1px rgba(21,21,21,0.5);
-  }
-  nav a {
-    color: #FFF;
-  }
 
-li i.fa {
-    font-size: 2em;
-  }
   .socials i.fa {
     display: flex;
   }
