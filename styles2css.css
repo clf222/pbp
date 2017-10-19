@@ -150,9 +150,13 @@ nav#myMenu {
 }
 nav#myMenu > ul {
   list-style-type: none;
+  padding: 0;
 }
 nav#myMenu > ul > li {
   display: block;
+  text-align: center;
+  margin-bottom: 1.5em;
+
 }
 nav a {
   color: #FFF;
