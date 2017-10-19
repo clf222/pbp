@@ -4,7 +4,7 @@ html {
   color: #151515;
 }
 
-.hamburger, .cross {
+/*.hamburger, .cross {
   background-color: #336699;
   border-radius: 5px;
   color: #FFFFF0;
@@ -46,7 +46,7 @@ html {
   font-size:1.5em;
   margin-top:5px;
   margin:0 auto;
-}
+}*/
 
 
 /*span{padding-left:20px;}*/
@@ -114,7 +114,7 @@ p {
 }
 
 /*END DEFAULT TEXT STYLES*/
-header
+/*header
 {
     background-color: #f4a6bb;
     height: 8vh;
@@ -127,7 +127,7 @@ header
     left: 0;
     right: 0;
     z-index: 8;
-}
+}*/
 nav#myMenu {
   background-color: #336699;
   padding: .5em;
@@ -164,6 +164,15 @@ nav a {
 
 li i.fa {
   font-size: 2em;
+}
+h1 {
+  font-size: 2em;
+  /*display: inherit;*/
+  font-family: 'Baloo', sans-serif;
+  color: #336699;
+}
+h1 span {
+  color: #E94E77;
 }
 
 .wordmark h3  {
@@ -521,12 +530,6 @@ header {
 }*/
 h1 {
   font-size: 4em;
-  /*display: inherit;*/
-  font-family: 'Baloo', sans-serif;
-  color: #336699;
-}
-h1 span {
-  color: #E94E77;
 }
 .body-text {
   font-size: 1.25em;
@@ -546,9 +549,9 @@ h1 span {
   a:active {
     color:
   }
-  .hamburger, .cross {
+  /*.hamburger, .cross {
     visibility: hidden;
-  }
+  }*/
 button.content {
     margin-bottom: 2em;
   }
