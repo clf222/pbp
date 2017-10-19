@@ -176,6 +176,7 @@ a.active {
 }
 button.content a {
   color: #FFFFF0;
+  text-decoration: none;
 }
 button.content a:hover {
   text-decoration: underline;
@@ -344,7 +345,6 @@ box-shadow: 4px 1px 2px 1px rgba(21,21,21,0.3);
 }
 .events-text {
   background: rgba(255,255,255,.8);
-  /*padding: 1.5em;*/
   margin: auto 0;
   width: 60vw;
   height: 80vh;
@@ -354,14 +354,11 @@ box-shadow: 4px 1px 2px 1px rgba(21,21,21,0.3);
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
-  /*align-items: center;*/
   align-items: center;
 
 }
 .event-listing {
-
   margin: auto 0;
-
 }
 .event {
   display: flex;
@@ -449,8 +446,48 @@ p.date {
 header {
   visibility:hidden;
 }
-#myMenu {
-  display: inline-flex;
+ul.#myMenu {
+  display: inline;
+  background-color: #336699;
+  padding: .5em;
+  border-radius: 5px;
+  visibility: visible;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  height: 50vh;
+  top: 10vh;
+  right: 4vw;
+  max-width: 3em;
+  list-style: none;
+  z-index: 12;
+  -webkit-box-shadow: 2px 2px 3px 1px rgba(21,21,21,0.5);
+  -moz-box-shadow: 2px 2px 3px 1px rgba(21,21,21,0.5);
+  box-shadow: 2px 2px 3px 1px rgba(21,21,21,0.5);
+
+}
+li a i.fa {
+  background-color: #336699;
+  padding: .5em;
+  border-radius: 5px;
+  visibility: visible;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  height: 50vh;
+  top: 10vh;
+  right: 4vw;
+  max-width: 3em;
+  list-style: none;
+  z-index: 12;
+  -webkit-box-shadow: 2px 2px 3px 1px rgba(21,21,21,0.5);
+  -moz-box-shadow: 2px 2px 3px 1px rgba(21,21,21,0.5);
+  box-shadow: 2px 2px 3px 1px rgba(21,21,21,0.5);
+
 }
 h1 {
   font-size: 4em;
@@ -481,7 +518,7 @@ h1 span {
     height: 40vh;
     top: 10vh;
     right: 4vw;
-    max-width: 3em;
+    /*max-width: 3em;*/
     list-style: none;
     z-index: 12;
     -webkit-box-shadow: 2px 2px 3px 1px rgba(21,21,21,0.5);
@@ -492,11 +529,8 @@ h1 span {
     color: #FFF;
   }
 
-i.fa {
-    display: list-item;
+li i.fa {
     font-size: 2em;
-
-
   }
   .socials i.fa {
     display: flex;
