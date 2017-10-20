@@ -6,8 +6,6 @@ $( document ).ready(function() {
     easing: 'easeInOutExpo',
 			scrollingSpeed: 1000,
 			css3: true,
-			controlArrows: false,
-			loopHorizontal: false,
 
   });
 });
