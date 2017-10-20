@@ -128,18 +128,16 @@ p {
     right: 0;
     z-index: 8;
 }*/
-nav#myMenu {
+
+ul#myMenu {
   background-color: #336699;
   padding: .5em;
   border-radius: 5px;
   overflow: hidden;
-  /*display: flex;
-  flex-flow: column;
-  justify-content: space-between;
-  align-items: center;*/
+  text-align: center;
   position: fixed;
   height: 40vh;
-  top: 10vh;
+  top: 30vh;
   right: 4vw;
   /*max-width: 3em;*/
   list-style: none;
@@ -148,22 +146,27 @@ nav#myMenu {
   -moz-box-shadow: 2px 2px 3px 1px rgba(21,21,21,0.5);
   box-shadow: 2px 2px 3px 1px rgba(21,21,21,0.5);
 }
-nav#myMenu > ul {
+ul#myMenu > ul {
   list-style-type: none;
   padding: 0;
 }
-nav#myMenu > ul > li {
+ul#myMenu > ul > li {
   display: block;
   text-align: center;
   margin-bottom: 1.5em;
-
-}
-nav a {
   color: #FFF;
+
+}
+ul a {
+  color: #FFF;
+  margin-bottom: 2em;
 }
 
-li i.fa {
+li a i.fa {
   font-size: 2em;
+  text-align: center;
+  margin: 0 auto 1em;
+  padding: 0 auto;
 }
 h1 {
   font-size: 2em;
