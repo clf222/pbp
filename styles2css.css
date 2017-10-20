@@ -135,7 +135,7 @@ ul#myMenu {
   overflow: hidden;
   text-align: center;
   position: fixed;
-  height: 45vh;
+  height: 50vh;
   top: 30vh;
   right: 4vw;
   /*max-width: 3em;*/
@@ -562,6 +562,9 @@ button.content {
 }
 
 @media (min-width: 768px) {
+  ul#myMenu {
+    height: 40vh;
+  }
   #location {
     background-color: #FFFFF0;
     padding: 0;
