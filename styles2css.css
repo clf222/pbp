@@ -123,16 +123,21 @@ li a i.fa {
   padding: 0 auto;
 }
 h1 {
-  font-size: 2.5em;
+  font-size: 2em;
   font-family: 'Baloo', sans-serif;
   color: #336699;
+
 }
 h1 span {
   color: #E94E77;
 }
 
-.wordmark  {
-font-family: 'Baloo', sans-serif;
+ h1.wordmark {
+   margin-top: 1em;
+   display: block;
+}
+.wordmark {
+  font-family: 'Baloo', sans-serif;
 }
 
 span.logo {
@@ -150,16 +155,17 @@ h2.heading {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  padding: 0 1.5em;
+  padding: 1.5em 1.5em 2em 1.5em;
+  margin-bottom: 3em;
 }
 
 .socials {
-  padding: 1em 0;
   display: flex;
   font-size:2em;
   justify-content: space-around;
   color: #336699;
   width: 100%;
+  margin: 0 0 .5em 0;
 }
 
 
@@ -257,8 +263,6 @@ p.body-text {
     flex-flow: column nowrap;
     justify-content: space-between;
     align-items: center;
-    /*padding: 1.5em;
-    flex-shrink: 1;*/
     -moz-box-shadow: 10px 10px 19px 0px rgba(115,115,115,0.29);
     -moz-box-shadow: 0px 18px 28px 0px rgba(181,181,181,1);
     box-shadow: 0px 18px 28px 0px rgba(41, 41, 41, 0.4);
@@ -445,7 +449,7 @@ p.date {
   }
 
 h1 {
-  font-size: 4em;
+  font-size: 3em;
 }
 p.body-text {
   font-size: 1.25em;
@@ -456,18 +460,26 @@ p.body-text {
 .socials {
   font-size: 3em;
 }
+.socials i.fa {
+  display: flex;
+}
 
   a {
     text-decoration: none;
     color: #336699;
   }
   i.fa.fa-angle-double-down {
-    visibility: hidden;
+    display: none;
   }
 
 button.content {
     margin-bottom: 2em;
   }
+  .home-text {
+    width: 80vw;
+    height: 80vh;
+    margin: 10vw auto;
+    padding: 3em auto 0;
 
   #menu {
     background-color: #FFFFF0;
@@ -526,6 +538,15 @@ button.content {
 }
 
 @media (min-width: 768px) {
+  .home-text {
+    width: 80vw;
+    height: 80vh;
+    margin: 10vw auto;
+    padding: 3em auto;
+  }
+  h1 {
+    font-size: 4em;
+  }
 
   #location {
     background-color: #FFFFF0;
