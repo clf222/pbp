@@ -72,13 +72,11 @@ ul#myMenu {
   background-color: #336699;
   padding: .5em;
   border-radius: 5px;
-  overflow: hidden;
   text-align: center;
   position: fixed;
-  height: 52vh;
-  top: 30vh;
-  right: 4vw;
-  /*max-width: 3em;*/
+  height: 45vh;
+  top: 25vh;
+  right: 2vw;
   list-style: none;
   z-index: 12;
   -webkit-box-shadow: 2px 2px 3px 1px rgba(21,21,21,0.5);
@@ -101,9 +99,21 @@ ul a {
   margin-bottom: 2em;
 }
 i.fa.fa-angle-double-down {
-  font-size: 3em;
+  font-size: 32px;
+  color: #E94E77;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
   font-weight: bold;
-  align-self: center;
+  margin-bottom: 1em;
+  background-color: #FFF;
+  border-radius: 50%;
+  visibility: visible;
+}
+i.fa.fa-angle-double-down:hover {
+  background-color: #E94E77;
+  color: #FFF;
 }
 
 li a i.fa {
@@ -113,8 +123,7 @@ li a i.fa {
   padding: 0 auto;
 }
 h1 {
-  font-size: 2em;
-  /*display: inherit;*/
+  font-size: 2.5em;
   font-family: 'Baloo', sans-serif;
   color: #336699;
 }
@@ -122,11 +131,8 @@ h1 span {
   color: #E94E77;
 }
 
-.wordmark h3  {
-font-size: 1.25em;
+.wordmark  {
 font-family: 'Baloo', sans-serif;
-display: flex;
-justify-content: center;
 }
 
 span.logo {
@@ -144,11 +150,13 @@ h2.heading {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  padding: 0 1.5em;
 }
+
 .socials {
   padding: 1em 0;
   display: flex;
-  font-size:1.5em;
+  font-size:2em;
   justify-content: space-around;
   color: #336699;
   width: 100%;
@@ -171,8 +179,9 @@ button.content a:hover {
 
 #home h3 {
   font-size: 1.5em;
-  font-family: 'Baloo', sans-serif;
+  font-family: 'Hind', sans-serif;
   line-height: 1.5em;
+  padding: 0 1.5em;
   text-align: center;
 }
 #home h3, #home h4{
@@ -244,10 +253,12 @@ p.body-text {
 
 .home-text {
     background: rgba(255,255,255,.7);
-    /*padding: 1.5em;*/
-    /*margin-top: 10vh;*/
-    margin-right: 2em;
-    margin-left: 2em;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    /*padding: 1.5em;
+    flex-shrink: 1;*/
     -moz-box-shadow: 10px 10px 19px 0px rgba(115,115,115,0.29);
     -moz-box-shadow: 0px 18px 28px 0px rgba(181,181,181,1);
     box-shadow: 0px 18px 28px 0px rgba(41, 41, 41, 0.4);
@@ -429,6 +440,9 @@ p.date {
 }
 
 @media (min-width: 450px) {
+  ul#myMenu {
+    visibility: visible;
+  }
 
 h1 {
   font-size: 4em;
@@ -446,6 +460,9 @@ p.body-text {
   a {
     text-decoration: none;
     color: #336699;
+  }
+  i.fa.fa-angle-double-down {
+    visibility: hidden;
   }
 
 button.content {
@@ -509,9 +526,7 @@ button.content {
 }
 
 @media (min-width: 768px) {
-  /*ul#myMenu {
-    height: 45vh;
-  }*/
+
   #location {
     background-color: #FFFFF0;
     padding: 0;
