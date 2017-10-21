@@ -230,7 +230,7 @@ p.light.heading {
   text-align: center;
 }
 p.body-text {
- margin: 1em 2vw 0 0;
+ margin: 1em 0 0 0;
  font-size: 1em;
  text-align: center;
 }
@@ -285,7 +285,7 @@ p.body-text {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   margin: 10vh 2em 2em;
   background: rgba(255,255,240,.8);
   padding: 1.5em;
@@ -297,10 +297,12 @@ p.body-text {
 }
 
 
-.step {
-  display: block;
+ .step {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
   margin: 0 auto;
-  padding-bottom: 0;
+   padding-bottom: 0;
 }
 
 .number {
@@ -310,7 +312,7 @@ p.body-text {
   border-radius: 50%;
   height: 36px;
   width: 36px;
-  margin: 0 auto 0 auto;
+
   line-height: 36px;
   text-align: center;
   -webkit-box-shadow: 4px 1px 2px 1px rgba(21,21,21,0.3);
@@ -341,8 +343,16 @@ box-shadow: 4px 1px 2px 1px rgba(21,21,21,0.3);
   align-items: center;
   height: 100vh;
 }
+.event-listing {
+display: flex;
+flex-flow: column nowrap;
+justify-content: space-between;
+align-items: center;
+/*flex-basis:55vw;
+max-height: 55vh;
+margin: auto 0;*/
+}
  .menu-text, .events-text {
-
   width: 60vw;
 
 }
@@ -361,6 +371,12 @@ box-shadow: 4px 1px 2px 1px rgba(21,21,21,0.3);
 .event-listing, .menu-listing {
   margin: auto 0;
 }
+.menu-listing {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
 .event {
   display: flex;
   flex-flow: column nowrap;
@@ -372,6 +388,7 @@ p.date {
   margin-top: 0;
   font-weight: bold;
   color: #336699;
+  text-align: center;
 }
 .party {
   font-size: 1.5em;
@@ -492,25 +509,36 @@ button.content {
   }
   .menu-text {
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-    padding: 1em;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
     height: 80vh;
   }
-
+  .menu-listing {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .number {
+    margin: 1em 1em 0 0;
+  }
 
   .step {
     display: flex;
     flex-flow: row nowrap;
-    flex-basis: 50vw;
     justify-content: flex-start;
     align-items: flex-start;
-    margin: 1em 1em 2em 1em;
+    margin: 0 0 1em 0;
+
   }
 
 .step-text {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
+    flex-basis: 40vw;
+
     justify-content: flex-start;
     align-items: flex-start;
     margin: 0 0 0 1em;
@@ -574,16 +602,8 @@ button.content {
     background-color: #f6f6f6;
   }
 
-.event-listing, .menu-listing {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-  flex-basis:55vw;
-  max-height: 55vh;
-  margin: auto 0;
 
-}
+
 .step h5, .step p {
   font-size: 1.25em;
 }
