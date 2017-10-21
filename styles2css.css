@@ -74,8 +74,8 @@ ul#myMenu {
   border-radius: 5px;
   text-align: center;
   position: fixed;
-  height: 45vh;
-  top: 25vh;
+  height: 38vh;
+  top: 22vh;
   right: 2vw;
   list-style: none;
   z-index: 12;
@@ -453,10 +453,10 @@ p.body-text {
 .page-heading {
   font-size: 2em;
 }
+.socials {
+  font-size: 3em;
+}
 
-  .socials i.fa {
-    display: flex;
-  }
   a {
     text-decoration: none;
     color: #336699;
