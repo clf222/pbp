@@ -1,12 +1,9 @@
 html {
   font-size: 100%;
   font-family: 'Hind', sans-serif;
-  color: #151515;
 }
 /*TEXT STYLES*/
- a {
-   color:#336699;
- }
+
 .dark {
  color: #336699;
 }
@@ -16,9 +13,7 @@ html {
 .light {
  color: #FFFFFF;
 }
-.black {
- color: #151515;
-}
+
 .uc, .page-heading {
   text-transform: uppercase;
   text-align: center;
@@ -141,6 +136,7 @@ span.logo {
 #home {
   justify-content: flex-start;
   background-image: url(https://clf222.github.io/pbp/images/hero-lg-3x.jpg);
+  background-color: #FFF;
   background-size: cover;
 }
 #about, #events, #location{
@@ -190,7 +186,7 @@ button.content a:hover {
   padding: 0 1.5em;
   text-align: center;
 }
-#home h3, #home h4{
+a, #home h3, #home h4, .dark{
   color: #336699;
 }
 .dark .page-heading {
@@ -209,7 +205,7 @@ button.content a:hover {
     padding: 1em;
   }
 
-.about-text .light h2 {
+.about-text .light h2{
   text-align: center;
   margin: 2vh 2vw 2vh;
   padding-bottom: 1em;
@@ -254,7 +250,8 @@ p.body-text {
     height: 100vh;
     width: 100vw;
   }
-#menu {background-color: #FFFFFF;
+#menu {
+    background-color: #FFFFFF;
     justify-content: flex-start;
     background-image: url(https://clf222.github.io/pbp/images/menu-small.jpg);
     background-size: cover;
@@ -284,14 +281,13 @@ p.body-text {
 .step h5, .step p {
   font-size: 1em;
   text-align: center;
-}
-.step h5 {
-  margin: 1em auto .5em auto;
   flex-basis: 50vw;
+}
+.step h5, .step p{
+  margin: 1em auto .5em auto;
 }
 .step p {
   margin: 0 auto .5em auto;
-  flex-basis: 50vw;
 }
 
 #events {
@@ -365,39 +361,24 @@ p.date {
 .hours h3.dark {
   margin-top: 3em;
 }
-.hours p {
-  line-height: 1.5em;
-}
-
 
 @media (min-width: 450px) {
   ul#myMenu {
     visibility: visible;
   }
-
-h1, .socials {
-  font-size: 3em;
-}
-p.body-text {
-  font-size: 1.25em;
-}
-.page-heading {
-  font-size: 2em;
-}
-
-.socials i.fa {
-  display: flex;
-}
-
-  a {
-    text-decoration: none;
-    color: #336699;
+  h1, .socials {
+    font-size: 3em;
+  }
+  p.body-text {
+    font-size: 1.25em;
+  }
+  .page-heading {
+    font-size: 2em;
   }
   i.fa.fa-angle-double-down {
     display: none;
   }
-
-button.content {
+  button.content {
     margin-bottom: 2em;
   }
   .home-text, .menu-text, .events-text {
@@ -405,21 +386,18 @@ button.content {
     height: 90vh;
     margin: 10vw auto;
     padding: 3em auto 0;
-}
-  #menu {
-    background-color: #FFFFF0;
+  }
+  #menu, .menu-text, .events-text {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-between;
     align-items: center;
-    height: 100vh;
+  }
+  #menu {
+    justify-content: space-between;
   }
   .menu-text, .events-text {
-    display: flex;
-    flex-flow: column nowrap;
     justify-content: space-between;
     margin: auto;
-    align-items: center;
     padding: 0;
   }
   .menu-listing {
@@ -436,7 +414,6 @@ button.content {
     align-items: flex-start;
     margin: 1em auto;
   }
-
 .step-text {
     display: flex;
     flex-flow: row wrap;
@@ -446,7 +423,6 @@ button.content {
     margin: 0 0 0 1em;
     padding: 0 1em;
   }
-
   .number {
     font-size: 2em;
     height: 48px;
@@ -455,16 +431,11 @@ button.content {
     margin: 0 0 .5em 0;
     flex-shrink: 0;
   }
-
   .step h5, .step p {
     text-align: left;
   }
-
   .step h5 {
     margin: 0;
-  }
-  .step p {
-    margin: 0 auto 1em 0;
   }
 }
 
@@ -502,14 +473,7 @@ button.content {
   #map {
     height: 100vh;
     width: 60vw;
-    background-color: #f6f6f6;
   }
-.step h5, .step p {
-  font-size: 1.25em;
- }
-.hours {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-start;
-  align-items: center;
-}
+  .step h5, .step p {
+    font-size: 1.25em;
+   }
