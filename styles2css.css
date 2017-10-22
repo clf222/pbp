@@ -28,6 +28,10 @@ button.content, ul#myMenu, .number, .home-text, .menu-text, .events-text {
   -moz-box-shadow: 2px 1px 2px 1px rgba(21,21,21,0.3);
    box-shadow: 2px 1px 2px 1px rgba(21,21,21,0.3);
 }
+.about-text, .location-text {
+  background-image: url("images/gplay.png");
+  background-repeat: repeat;
+}
 button.content {
   width: 9em;
   min-height: 2em;
@@ -194,8 +198,6 @@ a, #home h3, #home h4, .dark{
 }
   .about-text {
     background-color: #336699;
-    background-image: url("images/gplay.png");
-    background-repeat: repeat;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -288,7 +290,6 @@ p.body-text {
 .step p {
   margin: 0 auto .5em auto;
 }
-
 #events {
   background-image: url(https://clf222.github.io/pbp/images/surf.jpg);
   background-size: cover;
@@ -323,8 +324,6 @@ p.date {
 }
 #location {
   background-color: #FFFFF0;
-  background-image: url("images/gplay.png");
-  background-repeat: repeat;
 }
 .location-text {
   display: flex;
@@ -351,7 +350,6 @@ p.date {
 }
 
 .hours {
-  margin-top: 1em;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
@@ -368,9 +366,6 @@ p.date {
   h1, .socials {
     font-size: 3em;
   }
-  /*p.body-text {
-    font-size: 1.25em;
-  }*/
   .page-heading {
     font-size: 2em;
   }
