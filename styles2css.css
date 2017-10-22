@@ -202,21 +202,20 @@ a, #home h3, #home h4, .dark{
     align-items: center;
     width: 100vw;
     height: 40vh;
-    padding: 1em;
   }
 
 .about-text .light h2{
   text-align: center;
   margin: 2vh 2vw 2vh;
-  padding-bottom: 1em;
+  padding: 1em;
 }
 p.light.heading {
-  font-size: 1.5em;
+  font-size: 1.25em;
   margin: 2vh 2vw 2vh;
   text-align: center;
 }
 p.body-text {
- margin: 1em 0 0 0;
+ margin: 1em;
  font-size: 1em;
  text-align: center;
 }
@@ -369,11 +368,14 @@ p.date {
   h1, .socials {
     font-size: 3em;
   }
-  p.body-text {
+  /*p.body-text {
     font-size: 1.25em;
-  }
+  }*/
   .page-heading {
     font-size: 2em;
+  }
+  p.light.heading {
+    font-size: 1.5em;
   }
   i.fa.fa-angle-double-down {
     display: none;
@@ -388,7 +390,6 @@ p.date {
     padding: 3em auto 0;
   }
   #menu, .menu-text, .events-text {
-    display: flex;
     flex-flow: column nowrap;
     align-items: center;
   }
@@ -401,14 +402,10 @@ p.date {
     padding: 0;
   }
   .menu-listing {
-    display: flex;
-    flex-flow: column nowrap;
     align-items: flex-start;
     justify-content: space-between;
   }
-
   .step {
-    display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: flex-start;
@@ -449,22 +446,13 @@ p.date {
   h1 {
     font-size: 4em;
   }
-
   #location {
-    background-color: #FFFFF0;
-    padding: 0;
-    display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    align-items: center;
     height: 100vh;
-    background-image: url("images/gplay.png");
-    background-repeat: repeat;
   }
   .location-text {
     margin-top: 2vh;
-    display: flex;
-    flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
     margin: 0 auto;
