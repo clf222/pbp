@@ -19,9 +19,6 @@ html {
 .black {
  color: #151515;
 }
-.dark-pink {
-  color: #9A1336;
-}
 .uc, .page-heading {
   text-transform: uppercase;
   text-align: center;
@@ -31,12 +28,6 @@ html {
   font-size: 1.5em;
   margin: 1em auto 0 auto;
 }
-/*
-
-
-p.body-text {
-
-}*/
 
 button.content {
   width: 9em;
@@ -144,8 +135,20 @@ span.logo {
   padding: 0;
 }
 
-#home {background-color: #FFFFFF;
-  height: 100vh;display: flex;flex-flow: column nowrap;justify-content: flex-start;align-items: center;background-image: url(https://clf222.github.io/pbp/images/hero-lg-3x.jpg);background-size: cover;}
+#home, #about, #events, #menu {
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+#home {
+  justify-content: flex-start;
+  background-image: url(https://clf222.github.io/pbp/images/hero-lg-3x.jpg);
+  background-size: cover;
+}
+#about, #events{
+  justify-content: space-between;
+}
 
 h2.heading {
   margin-bottom: 2em;
@@ -193,19 +196,9 @@ button.content a:hover {
 #home h3, #home h4{
   color: #336699;
 }
-
-
-#about {
-  height: 100vh;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-  align-items: center;
-}
 .dark .page-heading {
   margin-top: .5em;
 }
-
   .about-text {
     background-color: #336699;
     background-image: url("images/gplay.png");
@@ -257,7 +250,7 @@ p.body-text {
 
 
 
-.home-text {
+.home-text, .menu-text, .events-text {
     background: rgba(255,255,255,.7);
     display: flex;
     flex-flow: column nowrap;
@@ -270,39 +263,17 @@ p.body-text {
     width: 100vw;
   }
 #menu {background-color: #FFFFFF;
-    height: 100vh;
-    display: flex;
-    flex-flow: column nowrap;
     justify-content: flex-start;
-    align-items: center;
     background-image: url(https://clf222.github.io/pbp/images/menu-small.jpg);
     background-size: cover;
-
   }
-
-
-.menu-text {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-  align-items: center;
-
-  background: rgba(255,255,240,.8);
-
-  -moz-box-shadow: 10px 10px 19px 0px rgba(115,115,115,0.29);
-  -moz-box-shadow: 0px 18px 28px 0px rgba(181,181,181,1);
-  box-shadow: 0px 18px 28px 0px rgba(41, 41, 41, 0.4);
-  height: 100vw;
-  width: 100vw;
-}
-
 
  .step {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   margin: 1em auto;
-   padding-bottom: 0;
+  padding-bottom: 0;
 }
 
 .number {
@@ -312,12 +283,11 @@ p.body-text {
   border-radius: 50%;
   height: 36px;
   width: 36px;
-
   line-height: 36px;
   text-align: center;
   -webkit-box-shadow: 4px 1px 2px 1px rgba(21,21,21,0.3);
--moz-box-shadow: 4px 1px 2px 1px rgba(21,21,21,0.3);
-box-shadow: 4px 1px 2px 1px rgba(21,21,21,0.3);
+  -moz-box-shadow: 4px 1px 2px 1px rgba(21,21,21,0.3);
+  box-shadow: 4px 1px 2px 1px rgba(21,21,21,0.3);
 }
 .step-text {
   width: 50vw;
@@ -340,41 +310,15 @@ box-shadow: 4px 1px 2px 1px rgba(21,21,21,0.3);
   background-size: cover;
   background-color: rgba(233, 78, 119, 0.2);
   padding: 0;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-  align-items: center;
-  height: 100vh;
 }
 .event-listing {
 display: flex;
 flex-flow: column nowrap;
 justify-content: space-between;
 align-items: center;
-/*flex-basis:55vw;
-max-height: 55vh;
-margin: auto 0;*/
-}
- .menu-text, .events-text {
-  width: 100vw;
-  height: 100vh;
 
 }
-.events-text {
-  background: rgba(255,255,255,.8);
 
-  -moz-box-shadow: 10px 10px 19px 0px rgba(115,115,115,0.29);
-  -moz-box-shadow: 0px 18px 28px 0px rgba(181,181,181,1);
-  box-shadow: 0px 18px 28px 0px rgba(41, 41, 41, 0.4);
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-  align-items: center;
-
-}
-.event-listing, .menu-listing {
-  margin: auto 0;
-}
 .menu-listing {
   display: flex;
   flex-flow: column nowrap;
@@ -397,14 +341,9 @@ p.date {
 .party {
   font-size: 1.5em;
   font-weight: bold;
-
 }
-
-
 #location {
   background-color: #FFFFF0;
-
-  /*padding-bottom: 1em;*/
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
@@ -421,7 +360,6 @@ p.date {
   margin-bottom:0;
   height: 100vh;
 }
-
 #map {
   height: 40vh;
   width: 100vw;
@@ -504,7 +442,6 @@ button.content {
 }
   #menu {
     background-color: #FFFFF0;
-    padding-bottom: 1em;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
@@ -534,15 +471,12 @@ button.content {
     justify-content: flex-start;
     align-items: flex-start;
     margin: 1em auto;
-    /*padding: 0 1em;*/
-
   }
 
 .step-text {
     display: flex;
     flex-flow: row wrap;
     flex-basis: 50vw;
-
     justify-content: flex-start;
     align-items: flex-start;
     margin: 0 0 0 1em;
@@ -606,13 +540,9 @@ button.content {
     width: 60vw;
     background-color: #f6f6f6;
   }
-
-
-
 .step h5, .step p {
   font-size: 1.25em;
-}
-
+ }
 .hours {
   display: flex;
   flex-flow: column nowrap;
